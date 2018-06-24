@@ -2,8 +2,8 @@ echo 'Go Native'
 go run main.go
 echo
 
-echo 'C++ Native'
-g++ -std=c++14 -o out.c++ main.cc
+echo 'C++ Native (-Os)'
+g++ -std=c++14 -Os -o out.c++ main.cc
 ./out.c++
 echo
 
@@ -21,7 +21,7 @@ echo 'JavaScript'
 node main.js
 echo
 
-echo 'Wasm (C++)'
+echo 'Wasm (C++) (-Os)'
 emcc main.cc -std=c++14 -Os -s -o out.emcc.js WASM=1
 node out.emcc.js
 echo

@@ -4,25 +4,25 @@
 $ ./run.sh
 Go Native
 result: +5.000000e+006
-time [ns]: 52010395
+time [ns]: 52339041
 
-C++ Native
+C++ Native (-Os)
 result: 5000000.000000
-time [ns]: 401993904
+time [ns]: 14312885
 
 Wasm (Go)
 result: +5.000000e+006
-time [ns]: 245000000
+time [ns]: 243000000
 
 GopherJS
 result: 5000000
-time [ns]: 174000000
+time [ns]: 158000000
 
 JavaScript
 result: 5000000
-time [ns]: 83991348
+time [ns]: 89701023
 
-Wasm (C++)
+Wasm (C++) (-Os)
 result: 5000000.000000
-time [ns]: 77460468
+time [ns]: 78170506
 ```
