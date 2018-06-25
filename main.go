@@ -16,6 +16,8 @@ package main
 
 import (
 	"time"
+
+	"github.com/gopherjs/gopherwasm/js"
 )
 
 func array() []float32 {
@@ -54,10 +56,25 @@ func heavyTask() float32 {
 	return result
 }
 
+var now func() int64
+
+func init() {
+	if js.Global != js.Null {
+		now = func() int64 {
+			arr := js.Global.Get("process").Call("hrtime")
+			return int64(arr.Index(0).Int() * 1e9 + arr.Index(1).Int())
+		}
+		return
+	}
+	now = func() int64 {
+		return int64(time.Now().UnixNano())
+	}
+}
+
 func main() {
-	t1 := time.Now().UnixNano()
+	t1 := now()
 	x := heavyTask()
-	t2 := time.Now().UnixNano()
+	t2 := now()
 	println("result:", x)
-	println("time [ns]:", int32(t2 - t1))
+	println("time [ns]:", int32(t2-t1))
 }
