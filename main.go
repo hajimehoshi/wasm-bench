@@ -59,9 +59,9 @@ func heavyTask() float32 {
 var now func() int64
 
 func init() {
-	if js.Global != js.Null {
+	if js.Global() != js.Null() {
 		now = func() int64 {
-			arr := js.Global.Get("process").Call("hrtime")
+			arr := js.Global().Get("process").Call("hrtime")
 			return int64(arr.Index(0).Int() * 1e9 + arr.Index(1).Int())
 		}
 		return
