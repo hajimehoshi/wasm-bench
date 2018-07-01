@@ -32,6 +32,6 @@ node main.js
 echo
 
 echo 'Wasm (C++) (-Os)'
-emcc main.cc -std=c++14 -Os -s -o out.emcc.js -g WASM=1
+emcc main.cc -std=c++14 -Os -o out.emcc.js -g -s WASM=1
 node out.emcc.js
 echo
