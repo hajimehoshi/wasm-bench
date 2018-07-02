@@ -1,3 +1,77 @@
+# Result on MacBook Pro 2014 Mid (2018-07-02)
+
+## f32
+
+```
+Go Native
+result: +5.000000e+006
+time [ns]: 46503928
+
+C++ Native (-Os)
+result: 5000000.000000
+time [ns]: 12024699
+
+Wasm (Go)
+result: +5.000000e+006
+time [ns]: 223048008
+
+Wasm (Go) (-Os by wasm-opt)
+result: +5.000000e+006
+time [ns]: 179819890
+
+Wasm (Go) (-O4 by wasm-opt)
+result: +5.000000e+006
+time [ns]: 159952173
+
+GopherJS
+result: 5000000
+time [ns]: 149482927
+
+JavaScript
+result: 5000000
+time [ns]: 73622416
+
+Wasm (C++) (-Os)
+result: 5000000.000000
+time [ns]: 67350223
+```
+
+## f64
+
+```
+Go Native
+result: +5.000000e+006
+time [ns]: 46859944
+
+C++ Native (-Os)
+result: 5000000.000000
+time [ns]: 40685821
+
+Wasm (Go)
+result: +5.000000e+006
+time [ns]: 190058473
+
+Wasm (Go) (-Os by wasm-opt)
+result: +5.000000e+006
+time [ns]: 173105512
+
+Wasm (Go) (-O4 by wasm-opt)
+result: +5.000000e+006
+time [ns]: 154126142
+
+GopherJS
+result: 5000000
+time [ns]: 142118787
+
+JavaScript
+result: 5000000
+time [ns]: 73518466
+
+Wasm (C++) (-Os)
+result: 5000000.000000
+time [ns]: 66163768
+```
+
 # Result on MacBook Pro 2014 Mid (2018-06-29)
 
 ```
