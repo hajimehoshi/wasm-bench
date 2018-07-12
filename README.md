@@ -1,3 +1,97 @@
+# Result on MacBook Pro 2014 Mid (2018-07-13)
+
+## Versions
+
+### Go
+
+```
+go version devel +9fa988547a Thu Jul 5 07:21:50 2018 +0000 darwin/amd64
+```
+
+### Node
+
+```
+v10.6.0
+```
+
+### Emscripten
+
+```
+1.38.6
+```
+
+## f32
+
+```
+Go Native
+result: +5.000000e+006
+time [ns]: 46286663
+
+C++ Native (-Os)
+result: 5000000.000000
+time [ns]: 11765504
+
+Wasm (Go)
+result: +5.000000e+006
+time [ns]: 182948167
+
+Wasm (Go) (-Os by wasm-opt)
+result: +5.000000e+006
+time [ns]: 148658133
+
+Wasm (Go) (-O4 by wasm-opt)
+result: +5.000000e+006
+time [ns]: 128597310
+
+GopherJS
+result: 5000000
+time [ns]: 129638379
+
+JavaScript
+result: 5000000
+time [ns]: 61945516
+
+Wasm (C++) (-Os)
+result: 5000000.000000
+time [ns]: 66390088
+```
+
+## f64
+
+```
+Go Native
+result: +5.000000e+006
+time [ns]: 47015580
+
+C++ Native (-Os)
+result: 5000000.000000
+time [ns]: 41005199
+
+Wasm (Go)
+result: +5.000000e+006
+time [ns]: 161097461
+
+Wasm (Go) (-Os by wasm-opt)
+result: +5.000000e+006
+time [ns]: 153063944
+
+Wasm (Go) (-O4 by wasm-opt)
+result: +5.000000e+006
+time [ns]: 128250647
+
+GopherJS
+result: 5000000
+time [ns]: 112628008
+
+JavaScript
+result: 5000000
+time [ns]: 61670484
+
+Wasm (C++) (-Os)
+result: 5000000.000000
+time [ns]: 62569073
+```
+
 # Result on MacBook Pro 2014 Mid (2018-07-02)
 
 ## f32
