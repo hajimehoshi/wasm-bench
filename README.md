@@ -25,35 +25,35 @@ v10.6.0
 ```
 Go Native
 result: +5.000000e+006
-time [ns]: 46286663
+time [ns]: 46852896
 
 C++ Native (-Os)
 result: 5000000.000000
-time [ns]: 11765504
+time [ns]: 11827945
 
 Wasm (Go)
 result: +5.000000e+006
-time [ns]: 182948167
+time [ns]: 192059527
 
 Wasm (Go) (-Os by wasm-opt)
 result: +5.000000e+006
-time [ns]: 148658133
+time [ns]: 141913384
 
 Wasm (Go) (-O4 by wasm-opt)
 result: +5.000000e+006
-time [ns]: 128597310
+time [ns]: 142049012
 
 GopherJS
 result: 5000000
-time [ns]: 129638379
+time [ns]: 129323688
 
 JavaScript
 result: 5000000
-time [ns]: 61945516
+time [ns]: 74149606
 
-Wasm (C++) (-Os)
+Wasm (C++) (-O3)
 result: 5000000.000000
-time [ns]: 66390088
+time [ns]: 64772805
 ```
 
 ## f64
@@ -61,35 +61,35 @@ time [ns]: 66390088
 ```
 Go Native
 result: +5.000000e+006
-time [ns]: 47015580
+time [ns]: 46454333
 
 C++ Native (-Os)
 result: 5000000.000000
-time [ns]: 41005199
+time [ns]: 40871053
 
 Wasm (Go)
 result: +5.000000e+006
-time [ns]: 161097461
+time [ns]: 160427612
 
 Wasm (Go) (-Os by wasm-opt)
 result: +5.000000e+006
-time [ns]: 153063944
+time [ns]: 142731077
 
 Wasm (Go) (-O4 by wasm-opt)
 result: +5.000000e+006
-time [ns]: 128250647
+time [ns]: 130341177
 
 GopherJS
 result: 5000000
-time [ns]: 112628008
+time [ns]: 111787121
 
 JavaScript
 result: 5000000
-time [ns]: 61670484
+time [ns]: 63478679
 
-Wasm (C++) (-Os)
+Wasm (C++) (-O3)
 result: 5000000.000000
-time [ns]: 62569073
+time [ns]: 64402912
 ```
 
 # Result on MacBook Pro 2014 Mid (2018-07-02)
