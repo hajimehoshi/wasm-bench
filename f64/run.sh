@@ -8,7 +8,7 @@ g++ -std=c++14 -Os -o out.c++ main.cc
 echo
 
 echo 'Wasm (Go)'
-GOOS=js GOARCH=wasm ~/go-code/bin/go build -o out.go.wasm .
+GOOS=js GOARCH=wasm go build -o out.go.wasm .
 ./go_js_wasm_exec out.go.wasm
 echo
 
